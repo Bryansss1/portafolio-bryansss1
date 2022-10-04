@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Rubik:wght@400;500;600&display=swap');
+/*CSS RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+img{
+    width: 100%;
+}
+body{
+    font-family: 'Rubik', sans-serif;
+    color: aliceblue;
+   background-color: black;
+}
+
+/*MENU HAMBURGUESA*/
+
+.nav-input{
+    display: none;
+}
+.bar-btn{
+    top:0;
+    cursor: pointer;
+    display: flex;
+    justify-content: end;
+    background:linear-gradient(black);
+    position:fixed;
+    padding-left: 80%;
+    background-color: black;
+}
+.nav-menu{
+    background: linear-gradient(rgb(68, 68, 68),black);
+    position: fixed;
+    top: 7%;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: clip-path .6s ease-in-out;
+    list-style: none;
+   text-decoration: none;
+   font-size: 1.3rem;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+    list-style: none;
+}
+.nav-menu li{
+    transition: transform .3s ease-out;
+}
+.nav-input:checked ~ .nav-menu{
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+.img-menu{
+    opacity: 1;
+    max-width: 3.5rem;
+    margin-right: 1rem;
+}
+/*MENU HAMBURGUESA CIERRE*/
+
+/*PERFIL*/
+.iconos-perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconos-perfil img{
+    width: 3rem;
+    margin: 1rem 1rem;
+    transition: transform .3s ease-out;
+}
+.perfil-img{
+    width: 100%;
+    max-width: 20rem;
+    margin: auto;
+    margin-top: 3.8rem;
+    border-radius: 50%;
+}
+.contenido-perfil{  
+    margin:1.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.text-perfil{
+    margin-top: .5rem;
+    font-weight: 200;
+    font-size: 1.25rem;
+}
+.contenido-perfil p{
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+/*PERFIL CIERRE*/
+
+/*ACERCA DE MI SECCION*/
+.seccion-acerca-de-mi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 1rem;
+    font-size: 1.8rem;
+}
+.seccion-acerca-de-mi p{
+    text-align: center;
+    margin: 1.2rem 1rem;
+    font-size: 1rem;
+}
+/*ACERCA DE MI SECCION CIERRE*/
+
+/*SECCION MIS HABILIDADES*/
+.seccion-habilidades{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 900;
+}
+.seccion-habilidades img{
+    width: 100%;
+    max-width: 10rem;
+    background: radial-gradient(gray,transparent);
+    transition: transform .3s ease-out;
+}
+.habilidades-title{
+   font-size: 2.5rem;
+   margin-bottom:3rem ;
+   text-align: center;
+}
+.item-habilidades{
+    margin-bottom:3rem ;
+}
+/*SECCION HABILIDADES CIERRE*/
+
+/*SECCION EXPERIENCIA*/
+.experiencia-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+}
+.seccion-experiencia{
+    margin: 0rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.item-experiencia{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 1rem;
+    padding: 2rem 0;
+}
+.item-experiencia:nth-child(2){
+   border-top:1px solid white;
+   border-bottom:1px solid white;
+}
+.item-experiencia-empresa p{
+    font-weight: bold;
+}
+/*SECCION EXPERIENCIA CERRADA*/
+
+/*SECCION PORTAFOLIO*/
+.portafolio-title{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+.imagenes-portafolio{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 1.5rem;
+   
+}
+.imagenes-portafolio img{
+    width: 100%;
+    max-width: 30rem;
+    margin: 1rem 0;
+    transition: transform .3s ease-out;
+}
+
+
+.nav-menu li:hover,
+.seccion-habilidades img:hover,
+.iconos-perfil img:hover,
+.imagenes-portafolio img:hover{
+    transform: scale(.8);
+}
+
+
+/*SECCION PORTAFOLIO CERRADO*/
+
+/*SECCION CONTACTOS*/
+.seccion-contactos{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content:space-around;
+  align-items: center;
+ margin: 2rem 0;
+}
+.item-contactos img{
+width: 100%;
+max-width: 6rem;
+}
+.contactos-title{
+    text-align: center;
+    font-size: 2.5rem;
+}
+.item-contactos p{
+    font-size: 1.1rem;
+}
+.final{
+    text-align: center;
+    margin-top: 3rem;
+}
+@media screen and (min-width:700px){
+   .nav-menu{
+    flex-direction: row;
+    background: none;
+    position: static;
+    clip-path: none;
+    transition: none;
+    margin: 4rem 0;
+    justify-content: space-evenly;
+   }
+   .bar-btn{
+    display: none;
+   }
+   .seccion-habilidades{
+    grid-template-columns: 1fr 1fr;
+   }
+   .imagenes-portafolio{
+    flex-direction: row;
+   justify-content:space-around;
+   margin-bottom: 8rem;
+   }
+   .imagenes-portafolio img{
+    max-width: 30rem;
+    padding-left: 1rem;
+   }
+   .portafolio-title{
+    margin: 2rem 0;
+   }
+   .perfil-img{
+    margin-top: 0;
+    margin-bottom: 1rem;
+   }
+}
