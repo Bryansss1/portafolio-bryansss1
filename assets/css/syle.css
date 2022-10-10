@@ -29,11 +29,12 @@ body{
     position:fixed;
     padding-left: 80%;
     background-color: black;
+    z-index: 6;
 }
 .nav-menu{
     background: linear-gradient(rgb(68, 68, 68),black);
     position: fixed;
-    top: 9%;
+    top: 6.5%;
     bottom: 0;
     width: 100%;
     height: 100%;
@@ -47,6 +48,7 @@ body{
     list-style: none;
    text-decoration: none;
    font-size: 1.3rem;
+   z-index: 5;
 }
 a{
     color: aliceblue;
