@@ -143,6 +143,13 @@ animation: span 2s infinite;
     margin: 5rem 1rem;
     font-size: 1.8rem;
 }
+.seccion-acerca-de-mi ul{
+    list-style:none;
+}
+.seccion-acerca-de-mi li{
+    margin: 1rem 0;
+    font-size: 1rem;
+}
 .seccion-acerca-de-mi p{
     text-align: center;
     margin: 1.2rem 1rem;
@@ -210,15 +217,15 @@ animation: span 2s infinite;
     margin-bottom: 2rem;
 }
 .imagenes-portafolio{
-    display: flex;
+    display: grid;
     flex-direction: column;
     text-align: center;
     margin: 1rem 1.5rem;
-   
+   gap: 1rem;
 }
 .imagenes-portafolio img{
     width: 100%;
-    max-width: 30rem;
+    max-width: 20rem;
     margin: 1rem 0;
     transition: transform .3s ease-out;
 }
@@ -236,12 +243,14 @@ animation: span 2s infinite;
 
 /*SECCION CONTACTOS*/
 .seccion-contactos{
+    flex-direction: column;
     width: 100%;
     display: flex;
     text-align: center;
     justify-content:space-around;
   align-items: center;
  margin: 2rem 0;
+ gap: 1rem;
 }
 .item-contactos img{
 width: 100%;
@@ -258,7 +267,55 @@ max-width: 6rem;
     text-align: center;
     margin-top: 3rem;
 }
+
+
+.tecno h3{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+.tecnologias{
+    display: grid;
+}
+.tecnologias li{
+margin-bottom: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.tecnologias img{ 
+    position: relative;
+    animation:infinite  flotar 3s;
+    width: 100%;
+max-width: 6rem;
+transition: all .3s;
+}
+.tecnologias img:hover{
+    transform: scale(1.2);
+}
+
+@keyframes flotar{
+    0%{
+        bottom: 0rem;
+    }
+    50%{
+        bottom: 1rem;
+    }
+    100%{
+        bottom: 0rem;
+    }
+}
+
+
+
+.zzz{
+    font-size: 5rem;
+}
 @media screen and (min-width:700px){
+    .tecnologias{
+        grid-template-columns: 2fr 2fr;
+    }
    .nav-menu{
     flex-direction: row;
     background: none;
@@ -275,12 +332,11 @@ max-width: 6rem;
     grid-template-columns: 1fr 1fr;
    }
    .imagenes-portafolio{
-    flex-direction: row;
-   justify-content:space-around;
+    grid-template-columns: 2fr 2fr;
    margin-bottom: 8rem;
    }
    .imagenes-portafolio img{
-    max-width: 30rem;
+    max-width: 20rem;
     padding-left: 1rem;
    }
    .portafolio-title{
@@ -290,4 +346,15 @@ max-width: 6rem;
     margin-top: 0;
     margin-bottom: 1rem;
    }
+   .seccion-contactos{
+    flex-direction: row;
+   }
+}
+@media screen and (min-width:900px){
+    .tecnologias{
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+    .imagenes-portafolio{
+        grid-template-columns: 2fr 2fr 2fr;
+    }
 }

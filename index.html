@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/normalize.css">
     <link rel="stylesheet" href="./assets/css/syle.css">
     <title>Portafolio Bryan S</title>
@@ -18,17 +19,18 @@
             
             <ul class="nav-menu">
                 <li><a class="menu-item" href="index.html">Home</a></li>
-                <li><a class="menu-item" href="#">About</a></li>
-                <li><a class="menu-item" href="#">Services</a></li>
-                <li><a class="menu-item" href="#">Contact</a></li>
+                <li><a class="menu-item" href="#about">About me</a></li>
+                <li><a class="menu-item" href="#proye">Services</a></li>
+                <li><a class="menu-item" href="#contact">Contact</a></li>
                 <li><a class="menu-item" href="#">Github</a></li>
             </ul>
         </nav>
         <section class="perfil">
-            <div class="contenido-perfil">
+            <div class="contenido-perfil" >
                 <img src="./assets/img/Imágenes/perfil.jpg" alt="" class="perfil-img">
-                <h3 class="text-perfil">Hola soy Bryan S / Hi I am Bryan S</h3>
+                <h3  id="about" class="text-perfil">Hola soy Bryan S / Hi I am Bryan S</h3>
                 <p class="text-perfil">Diseñador y Desarrollador Web<span>|</span></p>
+                <p>Front end</p>
             </div>
             <div class="iconos-perfil">
                 <a href="https://www.linkedin.com/in/bryan-david-sanabria-azuaje-025040253/" target="_blank"><img src="./assets/img/Íconos/linkedin.svg" alt="" ></a>
@@ -41,7 +43,14 @@
         <section>
             <article class="seccion-acerca-de-mi">
                 <h3>Acerca de mi</h3>
-                <p>Soy una persona muy motivada y energetica ,me gusta seguir en un aprendizaje constante y una evolucion en mis proyectos con cada conocimiento nuevo adquirido para siempre buscar esa anhelada perfeccion</p>
+                <p>Soy una persona muy motivada y energetica ,me gusta seguir en un aprendizaje constante y una evolucion en mis proyectos con cada conocimiento nuevo adquirido para siempre buscar descatar en mi Trabajo</p>
+                <ul>
+                    <li><i class='bx bx-food-menu'></i> Pro-activo</li>
+                    <li><i class='bx bx-show'></i> Adaptablidad al entorno</li>
+                    <li><i class='bx bx-check-shield'></i> Responsable</li>
+                    <li><i class='bx bx-cool' ></i> Excelente trabajando en equipo</li>
+                    <li><i class='bx bxs-book-bookmark'></i> Aprendizaje constante</li>
+                </ul>
             </article>
         </section>
 
@@ -68,7 +77,21 @@
             </article>
         </section>
 
+        <section class="tecno">
+                <h3>Tecnologias</h3>
+                <ul class="tecnologias">
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" alt="react png"/><small>REACT</small></li>
+                    <li><img src="https://camo.githubusercontent.com/3b6aa33b897ecdf82b578f52a5a30ded5ab3f9b3b5d86886e61db49e141424c6/68747470733a2f2f63646e2e67756473656e2e636f6d2f323032312f30392f33302f61663930626163383061393434376631383135366532353165636263316466662e706e67" alt="vite"><small>VITE + REACT</small></li>
+                    <li><img src="https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png" alt="javascr,css,html"><small>JS,CSS,HTML5</small></li>
+                    <li><img src="https://images.velog.io/images/sonofhuman20/post/7c171f4f-2b5c-45b8-928c-21ba4618c769/redux.png" alt="Redux react"><small>REACT REDUX</small></li>
+                    <li><img src="https://reactrouter.com/_brand/react-router-stacked-color.png" alt="Router react"> <small>REACT ROUTER</small></li>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" alt="sass"> <small>SASS</small></li>
+                    <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/512px-Bootstrap_logo.svg.png" alt="Boostrap"> <small>BOOTSTRAP</small></li>
+                    <li><img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-1-2.svg" alt="tailwind"> <small>TAILWIND</small></li>
+        </section>
+<!--
         <section> 
+            
         <h3 class="experiencia-title">Experiencia</h3>
             <article class="seccion-experiencia">
                
@@ -97,19 +120,22 @@
                 </div>
             </article>
         </section>
-
+-->
         <section>
-            <h3 class="portafolio-title">Portafolio</h3>
+            <h3 class="portafolio-title" id="proye">Portafolio</h3>
             <article class="imagenes-portafolio">
-                  <a href="#"><img src="./assets/img/Imágenes/ejemplo 1.png" alt="proyecto1"></a>
-                  <a href="#"><img src="./assets/img/Imágenes/ejemplo 2.png" alt="proyecto2"></a>
-                  <a href="#"><img src="./assets/img/Imágenes/ejemplo 3.png" alt="proyecto3"></a>
+                  <a href="https://clima-app-bryansss1.netlify.app/"><img src="./assets/img/proyects/climaapp.png" target="_blank" alt="clima app"> <p>Clima app</p></a>
+                  <a href="https://ecommercebryansss1.netlify.app/"><img src="./assets/img/proyects/ecommerce1.png" target="_blank" alt="ecommerce1"> <p>Ecommerce 1 landing page</p></a>
+                  <a href="https://ecommerce2y.netlify.app/"><img src="./assets/img/proyects/ecommerce2.png" target="_blank" alt="ecommerce2"> <p>Ecommerce 2 </p></a>
+                  <a href="https://pokewikii.netlify.app/"><img src="./assets/img/proyects/pokeapi.png" target="_blank" alt="pokeaqpi"> <p>Pokewiki</p></a>
+                  <a href="https://wikipedia-rick-and-morty.netlify.app/"><img src="./assets/img/proyects/rick.png" target="_blank" alt="proyecto2"> <p>RickandmortyWiki</p></a>
+                  <a href="https://userscrudd.netlify.app/"><img src="./assets/img/proyects/userscrud.png" target="_blank" alt="proyecto3"><p>Users crud</p></a>
             </article>
         </section>
     </main>
     <footer>
         <h3 class="contactos-title">Contactos</h3>
-        <section class="seccion-contactos">
+        <section id="contact" class="seccion-contactos">
             <div class="item-contactos">
                 <img src="./assets/img/Íconos/phone.svg" alt="">
                 <p>Numero celular</p>
@@ -121,8 +147,13 @@
                 <p>Email</p>
                 <small>bryandavidaaa@gmail.com</small>
             </div>
+
+            <div class="item-contactos">
+                <i class='bx bxl-telegram zzz'></i>
+                <p>Telegram</p>
+                <small>@bry18zzz</small>
+            </div>
         </section>
-        <p class="final">Hecho en Academlo</p>
     </footer>
 </body>
 </html>
