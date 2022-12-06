@@ -120,56 +120,24 @@ animation: span 2s infinite;
 animation: sombras infinite 2.5s;
 }
 .tu{
-    cursor: pointer;
     position: relative;
-    animation: myAnim infinite 3s;
+    animation: a infinite 4s;
 }
 
-@keyframes myAnim {
+@keyframes a {
 	0% {
-		transform: translate(0);
+		color:rgb(255, 255, 255);
         text-shadow: 2px 3px 2px rgb(55, 0, 255);
 	}
 
-	10% {
-		transform: translate(-2px, -2px);
-	}
-
-	20% {
-		transform: translate(2px, -2px);
-	}
-
-	30% {
-		transform: translate(-2px, 2px);
-	}
-
-	40% {
-		transform: translate(2px, 2px);
-	}
-
 	50% {
-		transform: translate(-2px, -2px);
-        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        color: rgba(120, 96, 255, 0.986);
+		text-shadow: 2px 3px 2px rgb(7, 7, 7);
 	}
 
-	60% {
-		transform: translate(2px, -2px);
-	}
-
-	70% {
-		transform: translate(-2px, 2px);
-	}
-
-	80% {
-		transform: translate(-2px, -2px);
-	}
-
-	90% {
-		transform: translate(2px, -2px);
-	}
 
 	100% {
-		transform: translate(0);
+        color: white;
         text-shadow: 2px 3px 2px rgb(55, 0, 255);
 	}
 }
