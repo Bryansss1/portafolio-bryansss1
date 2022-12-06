@@ -13,10 +13,18 @@ body{
     font-family: 'Rubik', sans-serif;
     color: aliceblue;
    background-color: black;
+  text-shadow: 1px 1px 1px rgb(70, 70, 70);
 }
-
+i{
+    transition: all .2s;
+}
+i:hover{
+    transform: scale(.9);
+}
 /*MENU HAMBURGUESA*/
-
+.iii{
+    font-size: 3rem;
+}
 .nav-input{
     display: none;
 }
@@ -30,6 +38,7 @@ body{
     padding-left: 80%;
     background-color: black;
     z-index: 6;
+    width: 100%;
 }
 .nav-menu{
     background: linear-gradient(rgb(68, 68, 68),black);
@@ -107,6 +116,85 @@ color: blue;
 position: relative;
 animation: span 2s infinite;
 }
+.contenido-perfil p{
+animation: sombras infinite 2.5s;
+}
+.tu{
+    cursor: pointer;
+    position: relative;
+    animation: myAnim infinite 3s;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: translate(0);
+        text-shadow: 2px 3px 2px rgb(55, 0, 255);
+	}
+
+	10% {
+		transform: translate(-2px, -2px);
+	}
+
+	20% {
+		transform: translate(2px, -2px);
+	}
+
+	30% {
+		transform: translate(-2px, 2px);
+	}
+
+	40% {
+		transform: translate(2px, 2px);
+	}
+
+	50% {
+		transform: translate(-2px, -2px);
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+	}
+
+	60% {
+		transform: translate(2px, -2px);
+	}
+
+	70% {
+		transform: translate(-2px, 2px);
+	}
+
+	80% {
+		transform: translate(-2px, -2px);
+	}
+
+	90% {
+		transform: translate(2px, -2px);
+	}
+
+	100% {
+		transform: translate(0);
+        text-shadow: 2px 3px 2px rgb(55, 0, 255);
+	}
+}
+@keyframes flotar22{
+    0%{
+       bottom:0px
+    }
+    50%{
+       bottom: 10px;
+    }
+    100%{
+       bottom: 0px;
+    }
+}
+@keyframes sombras{
+    0%{
+        text-shadow: 2px 3px 2px rgb(55, 0, 255);
+    }
+    50%{
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    }
+    100%{
+        text-shadow: 2px 3px 2px rgb(55, 0, 255);
+    }
+}
 @keyframes letra{
     0%{
         left:0px
@@ -136,24 +224,30 @@ animation: span 2s infinite;
 /*PERFIL CIERRE*/
 
 /*ACERCA DE MI SECCION*/
+
 .seccion-acerca-de-mi{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5rem 1rem;
+    margin: 2rem 1rem;
     font-size: 1.8rem;
 }
 .seccion-acerca-de-mi ul{
     list-style:none;
+    
 }
 .seccion-acerca-de-mi li{
     margin: 1rem 0;
     font-size: 1rem;
 }
 .seccion-acerca-de-mi p{
-    text-align: center;
+    text-align: start;
     margin: 1.2rem 1rem;
     font-size: 1rem;
+}
+.iiii{
+    display: flex;
+    align-items: center;
 }
 /*ACERCA DE MI SECCION CIERRE*/
 
@@ -170,15 +264,15 @@ animation: span 2s infinite;
     width: 100%;
     max-width: 10rem;
     background: radial-gradient(gray,transparent);
-    transition: transform .3s ease-out;
 }
 .habilidades-title{
    font-size: 2.5rem;
    margin-bottom:3rem ;
    text-align: center;
 }
-.item-habilidades{
+.item-habilidades img{
     margin-bottom:3rem ;
+    animation: incre infinite 3s;
 }
 /*SECCION HABILIDADES CIERRE*/
 
@@ -227,12 +321,40 @@ animation: span 2s infinite;
     width: 100%;
     max-width: 20rem;
     margin: 1rem 0;
-    transition: transform .3s ease-out;
+    transition: all .5s;
 }
+.imagenes-portafolio a:hover{
+    animation: qlq  1s;
+    color: rgb(105, 105, 245);
+}
+@keyframes qlq {
+    0%,
+    100% {
+        transform: translateX(0%);
+        transform-origin: 50% 50%;
+    }
 
+    15% {
+        transform: translateX(-30px) rotate(-6deg);
+    }
 
+    30% {
+        transform: translateX(15px) rotate(6deg);
+    }
+
+    45% {
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+
+    60% {
+        transform: translateX(9px) rotate(2.4deg);
+    }
+
+    75% {
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
 .nav-menu li:hover,
-.seccion-habilidades img:hover,
 .iconos-perfil img:hover,
 .imagenes-portafolio img:hover{
     transform: scale(.8);
@@ -283,6 +405,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+border-radius: 5%;
+}
+.tecnologias small{
+    animation: ez infinite 3s;
 }
 .tecnologias img{ 
     position: relative;
@@ -294,25 +420,108 @@ transition: all .3s;
 .tecnologias img:hover{
     transform: scale(1.2);
 }
-
+@keyframes ez{
+    0%{
+        box-shadow: 2px 2px 95px 10px rgb(25, 0, 255);
+    }
+    50%{
+        box-shadow: 2px 2px 95px 10px rgb(0, 0, 0);
+    }
+    100%{
+        box-shadow: 2px 2px 95px 10px rgb(25, 0, 255);
+    }
+}
 @keyframes flotar{
     0%{
+       
         bottom: 0rem;
     }
     50%{
+        
         bottom: 1rem;
     }
     100%{
+        
         bottom: 0rem;
     }
 }
 
 
+.seccion-acerca-de-mi a img{
+    width: 3rem;
+    margin: 1rem 1rem;
+    transition: transform .3s ease-out;
+}
+.seccion-acerca-de-mi-2 h4{
+    margin-top: .8rem;
+    font-size: 2rem;
+}
+.seccion-acerca-de-mi-2{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 1rem;
+    justify-content: center;
+}
+.seccion-acerca-de-mi-2 img{
+    width: 15rem;
+}
 
 .zzz{
     font-size: 5rem;
 }
+.iconos-p{
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.iconzzz{
+    margin-bottom: 6rem;
+    gap: 2rem;
+    display: flex;
+    align-items: center;
+}
+.iconzzz img:hover{
+    transform: scale(.9);
+}
+.iconzzz img{
+    width: 3rem;
+    transition: transform .3s ease-out;
+}
+
+
+@keyframes incre {
+	0% {
+        border-radius: 5%;
+		box-shadow: 2px 2px 200px 2px rgba(240, 240, 243, 0.336);
+		transform: scale(1);
+	}
+
+    50%{
+        border-radius: 5%;
+        box-shadow: 2px 2px 200px 3px rgb(14, 14, 14);
+		transform: scale(.9);
+    }
+	100% {
+        border-radius: 5%;
+		box-shadow: 2px 2px 200px 5px rgba(255, 255, 255, 0.356);
+		transform: scale(1);
+	}
+}
+
+
+
+
+
 @media screen and (min-width:700px){
+
+    .acercademi{
+            display: flex;
+            margin: 2rem 0rem;
+    }
+
     .tecnologias{
         grid-template-columns: 2fr 2fr;
     }
