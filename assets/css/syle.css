@@ -285,16 +285,36 @@ animation: sombras infinite 2.5s;
     margin: 1rem 1.5rem;
    gap: 1rem;
 }
-.imagenes-portafolio img{
+.imagenes-portafolio a img{
     width: 100%;
-    max-width: 20rem;
+    max-width: 15rem;
     margin: 1rem 0;
     transition: all .5s;
 }
 .imagenes-portafolio a:hover{
     animation: qlq  1s;
     color: rgb(105, 105, 245);
+    box-shadow: 2px 2px 80px 2px rgba(49, 3, 255, 0.404);
 }
+.imagenes-portafolio a p:nth-child(3){
+    margin: 2rem;
+}
+.alo{
+    margin-bottom: 1rem;
+}
+.imagenes-portafolio a{
+    
+    transition: all .5s;
+   border-top-left-radius: 15%;
+   border-bottom-right-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    gap: .1rem;
+    flex-direction: column;
+   display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+}
+
 @keyframes qlq {
     0%,
     100% {
