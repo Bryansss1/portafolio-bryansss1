@@ -197,7 +197,7 @@ animation: sombras infinite 2.5s;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2rem 1rem;
+    margin: 4rem 1rem;
     font-size: 1.8rem;
 }
 .seccion-acerca-de-mi ul{
@@ -235,11 +235,17 @@ animation: sombras infinite 2.5s;
 }
 .habilidades-title{
    font-size: 2.5rem;
-   margin-bottom:3rem ;
+   margin:2.5rem 0rem ;
    text-align: center;
 }
+.item-habilidades{
+    margin:1rem 0rem;
+}
+.item-habilidades:nth-child(4){
+    margin-bottom: 6rem;
+}
 .item-habilidades img{
-    margin-bottom:3rem ;
+    margin-bottom:.5rem ;
     animation: incre infinite 3s;
 }
 /*SECCION HABILIDADES CIERRE*/
@@ -276,7 +282,8 @@ animation: sombras infinite 2.5s;
 .portafolio-title{
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0rem;
+    margin-top: 3rem;
 }
 .imagenes-portafolio{
     display: grid;
@@ -358,9 +365,9 @@ animation: sombras infinite 2.5s;
     display: flex;
     text-align: center;
     justify-content:space-around;
-  align-items: center;
- margin: 2rem 0;
- gap: 1rem;
+    align-items: center;
+     margin: 2rem 0;
+    gap: 1rem;
 }
 .item-contactos img{
 width: 100%;
